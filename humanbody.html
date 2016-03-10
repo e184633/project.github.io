@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Human Body</title>
+  <title>Robot Nurse</title>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Vast+Shadow' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="dist/css/bootstrap.css">
@@ -10,6 +10,8 @@
 </head>
 
 <body>
+<!-- NAVBAR -->
+  <!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> -->
   <div class="navbar-wrapper">
     <div class="container">
       <div class="navbar navbar-inverse">
@@ -36,37 +38,177 @@
       </div>
     </div>
   </div>
-  
-  <div class='jumbotron'>
-            <img src="images/1 copy.jpg" width="1181" height="1181" border="0" usemap="#map" />
-            <map name="map">
-              <area shape="rect" coords="24,244,201,355" href="#" />
-              <area shape="rect" coords="510,18,665,195" href="head.html" />
-              <area shape="rect" coords="594,236,726,351" href="lefttorso.html" />
-              <area shape="rect" coords="468,821,568,1162" href="#leg_1" />
-            </map>
-    </div> 
-<!-- <img src='images/sandwich.png' class='img-responsive'> -->
-        
-      <!-- <img src="images/1 copy.jpg" class='img-responsive'> -->
-      
-         
-    
-    <div id="mission" class='text-center'>
 
+<!-- CAROUSEL EFFECT STYLE GALLERY -->
+  <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/fruit-and-veg.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Let us care about you</h1>
+              <p class="lead"> Feeling sick? Nurse Robo fusses & nurses you <br /> back to health...better than your mom :)</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/scary.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>The mystery that a human body is</h1>
+              <p class="lead">Our body is a complex machine. Machines don't work unless you take care of them!</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/head.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Towards brainier brains</h1>
+              <p class="lead">Unravel the amazing miracle that lives inside you. Learn more about your brains & let the genius free!</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>In sickness & in health</h1>
+              <p class="lead">We are born with our bodies. Our entire lifetime is a journey towards knowing ourselves better.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/adam1.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>The dream of healthy living</h1>
+              <p class="lead">All the facts you knew and didn't know about amazing excercises, eating green and more.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+  <div class='jumbotron'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-4'>
+            <!-- <img id="rob" src="images/baymax.png" height=150 onclick=alert("?")> -->
+            <!-- <img src="images/baymax.png" width="1024" height="1329" border="0" usemap="#map" /> -->
+              <img src="images/baymax.png" width="150" height="195" border="0" usemap="#bay" />
+
+                <map name="bay">
+                  <area shape="rect" coords="1,2,145,189" href="humanbody.html" />
+
+                </map>
+
+
+          </div>
+
+        <!-- <div class='col-sm-4'>
+          <h1>Feeling sick? Nurse Robo fusses & nurses you back to health...better your mom wink emoticon :) </h1>
+        </div> -->
+        <!-- <div class="col-sm-4"> -->
+         <!--  <img src="images/1 copy.jpg" width="1181" height="1181" border="0" usemap="#map" />
+          <map name="map">
+            <area shape="rect" coords="24,244,201,355" href="#" />
+            <area shape="rect" coords="510,18,665,195" href="head.html" />
+            <area shape="rect" coords="594,236,726,351" href="#heart" />
+            <area shape="rect" coords="468,821,568,1162" href="#leg_1" />
+          </map> -->
+
+        <!-- </div>> -->        <!-- <img src="images/3.jpg"> -->
+
+        
+      </div> 
+      <form role='form' class='form-inline'>
+          <div class="form-group">
+          <label for="email">         Ask me           </label>
+        <!-- <label for="email">Ask me</label>
+        <form role='form' class='form-inline'>
+        -->
+          <!-- <div class="form-group"> -->
+            <input type="text" class='form-control' name="email" placeholder="Search my robot brains!" >
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <div id="mission" class='text-center'>
       <div class="container">
-        <h2><br /> Help you when your GP is far away and you are too lazy to go there :)</h2>
+        <h4><br />Your 24-hour nurse who will pamper you, listen to all the aches and comfort you during the dark days of illness...</h4>
         <div id='social-buttons'>
+          <!-- <button class="btn btn-sm btn-twitter">Twitter</button>
+          <button class="btn btn-sm btn-facebook">Facebook</button>
+          <button class="btn btn-sm btn-pinterest">Pinterest</button> -->
           <a href="http://twitter.com" class="btn btn-sm btn-twitter">Twitter</a>
           <a href="http://facebook.com" class="btn btn-sm btn-facebook">Facebook</a>
           <a href="http://pinterest.com" class="btn btn-sm btn-pinterest">Pinterest</a>
+        
         </div>
       </div>
-    </div>
-    </div>
+      
+
   </div>
-  
-<script src="https://code.jquery.com/jquery.js"></script>
-<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+<footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p> &copy; 2016 CF/G &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="dist/js/bootstrap.js"></script>
+  <script src="../assets/js/jquery.js"></script>
+  <script src="../assets/js/bootstrap-transition.js"></script>
+  <script src="../assets/js/bootstrap-alert.js"></script>
+  <script src="../assets/js/bootstrap-modal.js"></script>
+  <script src="../assets/js/bootstrap-dropdown.js"></script>
+  <script src="../assets/js/bootstrap-scrollspy.js"></script>
+  <script src="../assets/js/bootstrap-tab.js"></script>
+  <script src="../assets/js/bootstrap-tooltip.js"></script>
+  <script src="../assets/js/bootstrap-popover.js"></script>
+  <script src="../assets/js/bootstrap-button.js"></script>
+  <script src="../assets/js/bootstrap-collapse.js"></script>
+  <script src="../assets/js/bootstrap-carousel.js"></script>
+  <script src="../assets/js/bootstrap-typeahead.js"></script>
+  <script>
+    !function ($) {
+      $(function(){
+        // carousel demo
+        $('#myCarousel').carousel()
+      })
+    }(window.jQuery)
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    if($('#bay')) {
+        $('#bay area').each(function() {
+            var id = $(this).attr('id');
+            $(this).mouseover(function() {
+                $('#overlay'+id).show();
+
+            });
+
+            $(this).mouseout(function() {
+                var id = $(this).attr('id');
+                $('#overlay'+id).hide();
+            });
+
+        });
+    }
+});
+  </script>
+  <script src="../assets/js/holder/holder.js"></script>
+
 </body>
 </html>
+
+
+
+
